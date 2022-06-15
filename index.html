@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/svg" href="assets/favicon_flor.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,200;1,400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,200;1,400&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ecommerce</title>
 </head>
 
 <body>
-    <!-- Botones de redes sociales -->
 
+    <!-- Boton permanente de Whatsapp -->
+
+    <a href="https://wa.me/3104159613?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <!-- Botones de redes sociales -->
     <header>
 
         <div class="container_SocialMedia">
@@ -50,12 +59,12 @@
     </section>
 
     <!--se crea el menu de navegacion-->
-    <nav id ="menu" >
+    <nav id="menu">
 
-        <div>
-            <img class="menu_hamburguesa" src="assets/menu_hamburguesa.svg" alt="">
+        <div class="menu_hamburguesa">
+            <img src="assets/menu_hamburguesa.svg" alt="">
         </div>
-        <div id="contenedor_navegador">
+        <div id="contenedor_navegador" class="text-center">
             <a>INICIO</a>
             <a>NOSOTROS <img class="navegador" src="assets/flecha_abajo.svg" alt=""></a>
             <a>CATEGORIAS<img class="navegador" src="assets/flecha_abajo.svg" alt=""></a>
@@ -65,16 +74,22 @@
         </div>
     </nav>
 
-    <!--creacion del carrusel-->
-    <div class="carrusel">
-        <ul class="slider">
-            <li id="banner_1"><img  src="assets/Banner 1.jpg" alt=""></li>
-            <li id="banner_2"><img  src="assets/Banner 2.jpg" alt=""></li>
-            <li id="banner_3"><img  src="assets/Banner 3.jpg" alt=""></li>
-            <li id="banner_4"><img  src="assets/Banner 4.jpg" alt=""></li>
-            <li id="banner_5"><img  src="assets/Banner 5.jpg" alt=""></li>
-            <li id="banner_6"><img  src="assets/Banner 6.jpg" alt=""></li>
-        </ul>
+    <!-- Se crea el contenedor de las imagenes de publicidad -->
+
+    <div id="contenedor_publicidad">
+        <div class="banner_principal">
+            <img src="assets/Banner 1.jpg" alt="">
+        </div>
+        <div class="banners_secundarios">
+            <img src="assets/Banner 2.jpg">
+            <img src="assets/Banner 5.jpeg">
+            <img src="assets/Banner 4.jpg">
+        </div>
+    </div>
+
+    <!-- Se crea la seleccion de botones de la publicidad -->
+
+    <div>
         <ul class="menu_carrusel">
             <li><a href="#banner_1"></a></li>
             <li><a href="#banner_2"></a></li>
@@ -87,13 +102,93 @@
 
     <!--Creacion texto motivacional-->
 
-    <div class="Texto_motivacional">
-
+    <div class="texto_motivacional text-center">
+        <p>ERES TAN UNICA COMO NUESTROS PRODUCTOS</p>
+        <button class="boton_ver_mas">VER MAS</button>
     </div>
 
+    <!--Empieza el Footer-->
 
+    <footer>
 
+        <div class="contacto_ubicacion_ingreso">
+            <div id="informacion_final">
 
+                <div id="contenedor_contacto">
+                    <h4>CONTACTO</h4>
+                    <form action="">
+                        <label>Nombre :</label>
+                        <br>
+                        <input type="text" value="" placeholder="Ingrese su nombre" required>
+                        <br>
+                        <label>Celular :</label>
+                        <br>
+                        <input type="number" value="" placeholder="Ingrese numero de celular" required>
+                        <br>
+                        <label>Correo :</label>
+                        <br>
+                        <input type="email" value="" placeholder="Ingrese su correo" required>
+                        <br>
+                        <label>Mensaje :</label>
+                        <br>
+                        <input type="textarea" value="" placeholder="Ingrese su mensaje" required>
+                        <br>
+                        <br>
+                        <input type="submit" value="Enviar" class="boton_formulario_enviar">
+                    </form>
+                    <a href="https://api.whatsapp.com/send?phone=3104159613" class="boton_whatsapp">Contáctanos</a>
+
+                </div>
+
+                <div id="contenedor_ubicacion">
+                    <h4>UBICACION</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5124218529086!2d-76.50200508573725!3d3.4678809520788176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a7cc8047e51f%3A0x565a8cfc44239823!2sSena%20Salomia!5e0!3m2!1ses!2sco!4v1655259887732!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div id="contenedor_ingreso_empleado">
+                    <h4>INGRESA COMO EMPLEADO</h4>
+                    <form action="">
+                        <label>Usuario :</label>
+                        <br>
+                        <input type="text" value="" placeholder="Ingrese su usuario" required>
+                        <br>
+                        <br>
+                        <label>Contraseña :</label>
+                        <br>
+                        <input type="password" value="" placeholder="Ingrese su contraseña" required>
+                        <br>
+                        <br>
+                        <input type="submit" value="Iniciar Sesion" class="boton_formulario_enviar">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!--Area del footer con informacion adicional-->
+
+        <div class="contenedor-footer">
+            <div class="content-foo text-center">
+                <h4>Phone</h4>
+                <p>3002504234</p>
+            </div>
+
+            <div class="content-foo text-center">
+                <h4>Email</h4>
+                <p>ecommerce_205@gmail.com</p>
+            </div>
+
+            <div class="content-foo text-center">
+                <h4>Dirección</h4>
+                <p>Carrera 10# 120b a 40-12c</p>
+            </div>
+        </div>
+
+        <h2 class="titulo-final text-center">&copy; ADSI_205 | ADSI</h2>
+    </footer>
 
 </body>
+
 </html>

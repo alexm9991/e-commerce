@@ -1,40 +1,64 @@
-*{
+* {
     margin: 0;
+    /* padding: 0; */
 }
 
-body{
+body {
     /* background: #d6b9ec; */
     /* background: #E0D6DD; */
     background: #F2D1EF;
-
+    font-family: "Poppins", sans-serif;
 }
 
-.container_SocialMedia{
+/* Estilos para el boton de whatsapp */
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
+
+  /* Redes Sociales */
+
+.container_SocialMedia {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.container_SocialMedia p{
+.container_SocialMedia p {
     width: 10%;
     height: 2%;
-    font-weight: lighter;
+    font-size: 13px;
+    font-weight: light;
 }
 
-.container_SocialMedia img{
+.container_SocialMedia img {
     width: 2%;
     height: 2%;
     margin: 5px;
 }
 
-.container_SectionLogo{
+.container_SectionLogo {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-.container_logo{
+.container_logo {
     position: relative;
     display: flex;
     align-items: center;
@@ -45,106 +69,115 @@ body{
     margin-top: -25px;
 }
 
-.logo{
+.logo {
     position: absolute;
     width: 100%;
     align-items: center;
 }
 
-.buscador{
+.buscador {
     width: 50%;
     height: 45px;
     border-radius: 10px;
 }
 
-.cupon{
+.cupon {
     border-radius: 5px;
+    height: 25px;
 }
 
-.botonesCompra{
-  display: flex;
-  align-items: flex-start;  
-
+.botonesCompra {
+    display: flex;
+    align-items: flex-start;
 }
 
-.boton{
+.boton {
     width: 50px;
     height: 50px;
 }
 
-.menu_hamburguesa{
+/* Estilos del contenedor del menu */
+
+#menu {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.menu_hamburguesa {
+    width: 10%;
+}
+
+.menu_hamburguesa img {
     width: 30px;
     height: 30px;
     margin: 0px 15px;
+}
+
+#contenedor_navegador {
+    width: 90%;
     display: flex;
-
-
+    justify-content: space-around;
+    font-size: 30px;
 }
 
-#menu{
-    display: flex;
-    margin-top: 20px;
-
-}
-
-#contenedor_navegador{
-    justify-content: flex-end;
-}
-
-a{
+a {
     margin: 30px 20px;
-    font-family: 'Exo 2', sans-serif;
-    
+    font-weight: light;
 }
 
-.navegador{
+.navegador {
     width: 10px;
     margin-left: 5px;
+    padding-bottom: 7px;
 }
 
-ul,li{
+/* Estilos del contenedor de publicidad */
+
+#contenedor_publicidad {
+    width: 80%;
+    margin: auto;
+    height: 450px;
+    display: flex;
+}
+
+.banner_principal {
+    width: 70%;
+    height: 450px;
+}
+
+.banner_principal img {
+    width: 700px;
+    border-radius: 2px;
+}
+
+.banners_secundarios {
+    width: 30%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.banners_secundarios img {
+    max-width: 55%;
+    max-height: 27%;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+/* Estilos de la seleccion con los botones de publicidadd */
+
+ul, li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-ul.slider{
-    position: relative;
-    width: 800px;
-    height: 300px;
-}
-
-ul.slider li {
-    position: absolute;
-    margin: 10px 200px;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    background-color:blanchedalmond;
-    transition: opacity .2s;
-
-}
-
-ul.slider li img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin: auto;
-}
-
-ul.slider li:first-child{
-    opacity: 1;
-}
-
-ul.slider li:target{
-    opacity: 1;
-}
-
 .menu_carrusel {
     text-align: center;
-    margin: 20px; 
+    margin: 10px 20px;
 }
 
 .menu_carrusel li {
@@ -152,7 +185,7 @@ ul.slider li:target{
     text-align: center;
 }
 
-.menu_carrusel li a{
+.menu_carrusel li a {
     display: inline-block;
     color: black;
     text-decoration: none;
@@ -160,4 +193,117 @@ ul.slider li:target{
     width: 20px;
     height: 20px;
     border-radius: 100%;
+}
+
+/* Estilos del contenedor de frases publicitarias y boton de ver mas*/
+
+.texto_motivacional{
+    width: 70%;
+    margin: auto;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.texto_motivacional p{
+    font-size: 80px;
+}
+
+.boton_ver_mas{
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+
+.contacto_ubicacion_ingreso{
+    background: #92C5FC;
+    width: 100%;
+    height: 420px;
+    margin-top: 20px;
+}
+
+#informacion_final{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+#informacion_final h4{
+    margin-bottom: 15px;
+}
+
+#informacion_final label{
+    margin-right: 10px;
+}
+
+#contenedor_contacto{
+    width: 30%;
+    padding: 20px;
+}
+
+#contenedor_ubicacion{
+    width: 30%;
+    padding: 20px;
+}
+
+#contenedor_ubicacion iframe{
+    width: 90%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#contenedor_ingreso_empleado{
+    width: 30%;
+    padding: 20px;
+}
+
+.boton_whatsapp{
+display: inline-block;
+padding:16px;
+border-radius: 8px;
+background-color: #25D366;
+color: #fff;
+text-decoration: none;
+font-family: sans-serif;
+font-size: 16px;
+}
+
+/* Estilos para el area de informacion adicional del footer */
+.contenedor-footer {
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.content-foo {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h4 {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.content-foo h4 {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: rgb(168, 116, 116);
+    border-bottom: 1px solid #7e5252;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+}
+
+.titulo-final {
+    font-size: 20px;
 }
